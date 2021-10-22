@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-prim:#fff;
+    --color-sec:#0175b0;
+
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 2.6rem;
+    --font-size-h3: 1.8rem;
+    --font-size-h4: 1.2rem;
+
+    --font-fam-Ubuntu: 'Ubuntu', sans-serif;
+
+    --font-weight-700: 700;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+}
+  
+.headerHome{
+    background-image: url("../Images/tandborste.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;   
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+}
+
+.headerhome-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerHome h1{
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 6rem;
+    color: var(--color-prim);
+    font-size: var(--font-size-h1);
+    max-width: 700px;
+    font-family: var(--font-fam-Ubuntu);
+    font-weight: var(--font-weight-400);
+}
+.headerHome p{
+    text-align: center;
+    color: var(--color-prim);
+    font-size: var(--font-size-h4);
+    max-width: 700px;
+    font-family: var(--font-fam-Ubuntu);
+    font-weight: var(--font-weight-300);
+
+}
+
+.btn-container{
+
+    position: absolute;
+    bottom: 0px;
+}
+
+.btn{
+    margin: 0 1rem;
+    width: 215px;
+    height: 85px;
+    border-radius: 2rem;
+    background-color:var(--color-sec);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+    border: 3px solid #4D4AE8;
+    box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: var(--font-fam-Ubuntu);
+    font-size: var(--font-size-h3);
+}
+
+.btn-outline{
+    margin: 0 1rem;
+    width: 215px;
+    height: 85px;
+    border-radius: 2rem;
+    border: 3px solid var(--color-sec);
+    box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+    box-sizing: border-box;
+    color: var(--color-sec);
+    background: transparent;
+    font-family: var(--font-fam-Ubuntu);
+    font-size: var(--font-size-h3);
+}
+
+.btn:hover{
+    background-color: #3733E5;
+    border-color: #3733E5;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .headerHome{
+        background-size: auto 100%; 
+    }
+
+  }
+
